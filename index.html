@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Экспертная система</title>
+	<link rel="stylesheet" href="./style.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<header class="header">
+		<img src="./img/header/logo.png" alt="logo" class="header__logo">
+	</header>
+	
+	<section class="welcome">
+		<div class="welcome__inner">
+			<div class="welcome__starting-form">
+				<h2 class="welcome__title">Не можете определиться с вузом?</h2>
+				<h3 class="welcome__subtitle">Пройдите наш тест, чтобы решить эту проблему!</h3>
+				<p class="welcome__text">Мы зададим вам 20 вопросов, ответив на которые, вы получите список московских университетов — от самого подходящего для вас к наименее подходящему.</p>
+				<button type="button" class="button welcome__button" onclick="window.location='#multi-step-form'">Начать!</button>
+			</div>
+
+			<img src="./img/welcome/illustration.png" alt="welcome" class="welcome__illustration">
+		</div>
+	</section>
+
+	<section class="multi-step-form" id="multi-step-form">
+		<div class="multi-step-form__inner">
+			<div class="multi-step-form__questions">
+				<div class="question-radio">
+						<p class="notification">В данный момент на сайте представлено 3 вопроса. Результат считается только на основе первого.</p>
+						<p class="question-radio__questions-counter">Вопрос 1 из 20</p>
+						<p class="question-radio__question-text">Для вас важнее быть в престижном вузе или в хорошем вузе «попроще»?</p>
+
+						<div class="question-radio__variants">
+							<label class="question-radio__label-radio"><input type="radio" class="question-radio__input-radio" name="question-radio-1" value="prestige" checked>Вуз должен занимать наиболее высокое место в рейтинге.</label>
+							<label class="question-radio__label-radio"><input type="radio" class="question-radio__input-radio" name="question-radio-1" value="not-prestige">Мне кажется, в топовых вузах много мажоров. Не хочу туда.</label>
+						</div>
+				</div>
+
+				<div class="question-radio question-radio_hidden">
+					<p class="question-radio__questions-counter">Вопрос 2 из 20</p>
+					<p class="question-radio__question-text">Вы собираетесь сдавать профильную математику (неважно, с какой целью — для поступления или «на всякий случай»)?</p>
+
+					<div class="question-radio__variants">
+						<label class="question-radio__label-radio"><input type="radio" class="question-radio__input-radio" name="question-radio-2" value="pass-math" checked>Собираюсь.</label>
+						<label class="question-radio__label-radio"><input type="radio" class="question-radio__input-radio" name="question-radio-2" value="not-pass-math">Не собираюсь.</label>
+					</div>
+				</div>
+
+				<div class="question-radio question-radio_hidden">
+					<p class="question-radio__questions-counter">Вопрос 3 из 20</p>
+					<p class="question-radio__question-text">Хотите ли вы использовать баллы профильной математики для поступления?</p>
+
+					<div class="question-radio__variants">
+						<label class="question-radio__label-radio"><input type="radio" class="question-radio__input-radio" name="question-radio-3" value="use-math" checked>Да, хочу. Планирую поступать туда, где требуется математика.</label>
+						<label class="question-radio__label-radio"><input type="radio" class="question-radio__input-radio" name="question-radio-3" value="not-use-math">Нет, не хочу. Планирую поступать на направление без математики.</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="multi-step-form__buttons">
+				<button type="button" class="button multi-step-form__button multi-step-form__button_type_prev button_hidden" onclick="prevQuestion()">Предыдущий вопрос</button>
+				<button type="button" class="button multi-step-form__button multi-step-form__button_type_next" onclick="nextQuestion()">Следующий вопрос</button>
+				<button type="button" class="button multi-step-form__button multi-step-form__button_type_submit button_hidden" onclick="processAnswers()">Отправить</button>
+			</div>
+
+			<div class="multi-step-form__result multi-step-form__result_hidden">
+				<div class="result-1-place">
+					<p class="annotation-to-results result-1-place__annotation">Наиболее подходящий для вас вуз: </p>
+					<p class="result-object result-1-place__object">МГУ</p>
+				</div>
+				<div class="result-2-place">
+					<p class="annotation-to-results result-2-place__annotation">Второе место: </p>
+					<p class="result-object result-2-place__object"></p>
+				</div>
+				<div class="result-3-place">
+					<p class="annotation-to-results result-3-place__annotation">Третье место: </p>
+					<p class="result-object result-3-place__object"></p>
+				</div>
+				<div class="result-others">
+					<p class="annotation-to-results result-others__annotation">Остальные (в порядке предпочтительности): </p>
+					<p class="result-object result-others__object"></p>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
