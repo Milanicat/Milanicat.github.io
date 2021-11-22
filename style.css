@@ -153,18 +153,6 @@ body {
 	margin: 4vmin 0 0 0;
 }
 
-.multi-step-form__button:hover {
-	animation-name: color;
-	animation-duration: 400ms;
-	animation-fill-mode: forwards;
-}
-
-@keyframes color {
-	100% {
-		color: #666666;
-	}
-}
-
 .button_hidden {
 	display: none;
 }
