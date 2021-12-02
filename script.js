@@ -4,82 +4,102 @@ let universities = {
 	"МГУ": {
 		points: 0,
 		rank: 1,
+		partOfMath: 0.6,
 	},
 	"МФТИ": {
 		points: 0,
 		rank: 2,
+		partOfMath: 1,
 	},
 	"МИФИ": {
 		points: 0,
 		rank: 3,
+		partOfMath: 0.97,
 	},
 	"ВШЭ": {
 		points: 0,
 		rank: 4,
+		partOfMath: 0.39,
 	},
 	"МГИМО": {
 		points: 0,
 		rank: 5,
+		partOfMath: 0.31,
 	},
 	"МГТУ им. Н.Э. Баумана": {
 		points: 0,
 		rank: 6,
+		partOfMath: 0.98,
 	},
 	"РАНХиГС": {
 		points: 0,
 		rank: 7,
+		partOfMath: 0.58,
 	},
 	"Финансовый университет": {
 		points: 0,
 		rank: 8,
+		partOfMath: 0.76,
 	},
 	"РЭУ им. Г.В. Плеханова": {
 		points: 0,
 		rank: 9,
+		partOfMath: 0.76,
 	},
 	"МИСиС": {
 		points: 0,
 		rank: 10,
+		partOfMath: 0.95,
 	},
 	"РГУНиГ им. И.М. Губкина": {
 		points: 0,
 		rank: 11,
+		partOfMath: 0.88,
 	},
 	"МЭИ": {
 		points: 0,
 		rank: 12,
+		partOfMath: 0.89,
 	},
 	"ПМГМУ им. И.М. Сеченова": {
 		points: 0,
 		rank: 13,
+		partOfMath: 0.56,
 	},
 	"РУДН": {
 		points: 0,
 		rank: 14,
+		partOfMath: 0.74,
 	},
 	"РНИМУ им. Н.И. Пирогова": {
 		points: 0,
 		rank: 15,
+		partOfMath: 0.36,
 	},
 	"МГЛУ": {
 		points: 0,
 		rank: 16,
+		partOfMath: 0.11,
 	},
 	"ВАВТ Минэкономразвития России": {
 		points: 0,
 		rank: 17,
+		partOfMath: 0.69,
 	},
 	"МАИ": {
 		points: 0,
 		rank: 18,
+		partOfMath: 0.99,
 	},
 	"МГЮА": {
 		points: 0,
 		rank: 19,
+		partOfMath: 0.01,
 	},
 	"ВУМО": {
 		points: 0,
 		rank: 20,
+		partOfMath: 0.14,
 	},
 }
 
@@ -140,31 +160,38 @@ function processAnswers() {
 }
 
 function givePointsToUniversities(numOfQuestion, answer) {
-	let pointsForTheQuestion;
-
-	let sortedListOfUniversities;
+	let pointsForUniversity;
 
 	if (numOfQuestion === 0) {
 		if (answer === "prestige") {
-			sortedListOfUniversities =
-				Object.keys(universities).sort(
-					function(a, b) {
-						return universities[a]["rank"] - universities[b]["rank"];
-					});
+			for (let university in universities) {
+				pointsForUniversity = 1 / universities[university]["rank"];
+
+				universities[university]["points"] += pointsForUniversity;
+			}
 		}
 		else if (answer === "not-prestige") {
-			sortedListOfUniversities =
-				Object.keys(universities).sort(
-					function(a, b) {
-						return universities[b]["rank"] - universities[a]["rank"];
-					});
+			for (let university in universities) {
+				pointsForUniversity = universities[university]["rank"] / 20;
+
+				universities[university]["points"] += pointsForUniversity;
+			}
 		}
+	}
+	else if (numOfQuestion === 1) {
+		if (answer === "pass-math") {
+			for (let university in universities) {
+				pointsForUniversity = 100 / universities[university]["partOfMath"];
 
-		pointsForTheQuestion = 1;
+				universities[university]["points"] += pointsForUniversity;
+			}
+		}
+		else if (answer === "not-pass-math") {
+			for (let university in universities) {
+				pointsForUniversity = 50 / universities[university]["partOfMath"];
 
-		for (let i = 0; i < sortedListOfUniversities.length; i++) {
-			universities[sortedListOfUniversities[i]]["points"] += pointsForTheQuestion;
-			pointsForTheQuestion = (pointsForTheQuestion - 0.05).toFixed(2);
+				universities[university]["points"] += pointsForUniversity;
+			}
 		}
 	}
 }

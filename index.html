@@ -29,14 +29,13 @@
 		<div class="multi-step-form__inner">
 			<div class="multi-step-form__questions">
 				<div class="question-radio">
-						<p class="notification">В данный момент на сайте представлено 3 вопроса (запланировано 20). Результат считается только на основе первого.</p>
-						<p class="question-radio__questions-counter">Вопрос 1 из 3</p>
-						<p class="question-radio__question-text">Для вас важнее быть в престижном вузе или в хорошем вузе «попроще»?</p>
+					<p class="question-radio__questions-counter">Вопрос 1 из 3</p>
+					<p class="question-radio__question-text">Для вас важнее быть в престижном вузе или в хорошем вузе «попроще»?</p>
 
-						<div class="question-radio__variants">
-							<label class="question-radio__label-radio"><input type="radio" class="question-radio__input-radio" name="question-radio-1" value="prestige" checked>Вуз должен занимать наиболее высокое место в рейтинге.</label>
-							<label class="question-radio__label-radio"><input type="radio" class="question-radio__input-radio" name="question-radio-1" value="not-prestige">Мне кажется, в топовых вузах много мажоров. Не хочу туда.</label>
-						</div>
+					<div class="question-radio__variants">
+						<label class="question-radio__label-radio"><input type="radio" class="question-radio__input-radio" name="question-radio-1" value="prestige" checked>Вуз должен занимать наиболее высокое место в рейтинге.</label>
+						<label class="question-radio__label-radio"><input type="radio" class="question-radio__input-radio" name="question-radio-1" value="not-prestige">Мне кажется, в топовых вузах много мажоров. Не хочу туда.</label>
+					</div>
 				</div>
 
 				<div class="question-radio question-radio_hidden">
@@ -66,24 +65,8 @@
 				<button type="button" class="button multi-step-form__button multi-step-form__button_type_submit button_hidden" onclick="processAnswers()">Отправить</button>
 			</div>
 
-			<div class="multi-step-form__result multi-step-form__result_hidden">
-				<div class="result-1-place">
-					<p class="annotation-to-results result-1-place__annotation">Наиболее подходящий для вас вуз: </p>
-					<p class="result-object result-1-place__object">МГУ</p>
-				</div>
-				<div class="result-2-place">
-					<p class="annotation-to-results result-2-place__annotation">Второе место: </p>
-					<p class="result-object result-2-place__object"></p>
-				</div>
-				<div class="result-3-place">
-					<p class="annotation-to-results result-3-place__annotation">Третье место: </p>
-					<p class="result-object result-3-place__object"></p>
-				</div>
-				<div class="result-others">
-					<p class="annotation-to-results result-others__annotation">Остальные (в порядке предпочтительности): </p>
-					<p class="result-object result-others__object"></p>
-				</div>
-			</div>
+			<ul class="multi-step-form__result">
+			</ul>
 		</div>
 	</section>
 </body>
