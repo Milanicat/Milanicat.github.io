@@ -82,18 +82,38 @@ body {
 
 .multi-step-form {
 	background-color: white;
-	height: 100vh;
+	min-height: 100vh;
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.multi-step-form__inner {
-	height: 100%;
+.multi-step-form__user-interaction {
 	width: 70%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 0 auto;
+}
+
+.multi-step-form__current-results {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.multi-step-form__current-results_hidden {
+	display: none;
+}
+
+.multi-step-form__notification {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.multi-step-form__string-with-objects {
+	font-size: 18px;
 }
 
 .multi-step-form__questions {
@@ -106,13 +126,13 @@ body {
 	font-size: 2.5vmin;
 }
 
-.question-radio {
+.multi-step-form__question {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-.question-radio__questions-counter {
+.multi-step-form__questions-counter {
 	font-size: 22px;
 	text-align: center;
 	background-color: #dcdcdc;
@@ -120,34 +140,35 @@ body {
 	border-radius: 5px;
 }
 
-.question-radio__variants {
+.multi-step-form__variants-radio {
 	display: flex;
 	flex-direction: column;
 	text-align: justify;
 }
 
-.question-radio__question-text {
+.multi-step-form__variants-checkbox {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-column-gap: 1.5vmin;
+}
+
+.multi-step-form__question-text {
 	text-align: center;
 	font-weight: bold;
 	font-size: 30px;
 }
 
-.question-radio__label-radio {
+.multi-step-form__label-radio, .multi-step-form__label-checkbox {
 	font-size: 24px;
 	padding-top: 10px;
 }
 
-.question-radio_hidden {
+.multi-step-form__question_hidden {
 	display: none;
 }
 
-.multi-step-form__buttons {
-	display: flex;
-	flex-direction: column-reverse;
-	width: 350px;
-}
-
 .multi-step-form__button {
+	width: 350px;
 	font-size: 30px;
 	padding: 10px;
 	margin: 30px 0 0 0;
@@ -205,15 +226,16 @@ body {
 	.welcome__button {
 		font-size: 5.5vmin;
 	}
-	.question-radio__questions-counter {
+	.multi-step-form__questions-counter {
 		font-size: 3vmin;
 		border: 2vmin solid #dcdcdc;
 		border-radius: 2vmin;
 	}
-	.question-radio__question-text {
+	.multi-step-form__question-text {
 		font-size: 4vmin;
+		margin
 	}
-	.question-radio__label-radio {
+	.multi-step-form__label-radio, .multi-step-form__label-checkbox {
 		font-size: 3.5vmin;
 		padding-top: 1vmin;
 	}
@@ -221,8 +243,18 @@ body {
 		width: 50vmin;
 	}
 	.multi-step-form__button {
+		width: 100%;
 		font-size: 4vmin;
 		padding: 1vmin;
 		margin: 4vmin 0 0 0;
+	}
+	.multi-step-form__notification {
+		font-size: 3.2vmin;
+	}
+	.multi-step-form__current-results {
+		margin-top: 2.5vmin;
+	}
+	.multi-step-form__string-with-objects {
+		font-size: 3vmin;
 	}
 }

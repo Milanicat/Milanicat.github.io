@@ -26,47 +26,248 @@
 	</section>
 
 	<section class="multi-step-form" id="multi-step-form">
-		<div class="multi-step-form__inner">
+		<div class="multi-step-form__user-interaction">
 			<div class="multi-step-form__questions">
-				<div class="question-radio">
-					<p class="question-radio__questions-counter">Вопрос 1 из 3</p>
-					<p class="question-radio__question-text">Для вас важнее быть в престижном вузе или в хорошем вузе «попроще»?</p>
+				<div class="multi-step-form__question">
+					<p class="multi-step-form__questions-counter">Вопрос 1 из 20</p>
+					<p class="multi-step-form__question-text">Для вас важнее быть в престижном вузе или в хорошем вузе «попроще»?</p>
 
-					<div class="question-radio__variants">
-						<label class="question-radio__label-radio"><input type="radio" class="question-radio__input-radio" name="question-radio-1" value="prestige" checked>Вуз должен занимать наиболее высокое место в рейтинге.</label>
-						<label class="question-radio__label-radio"><input type="radio" class="question-radio__input-radio" name="question-radio-1" value="not-prestige">Мне кажется, в топовых вузах много мажоров. Не хочу туда.</label>
+					<div class="multi-step-form__variants-radio">
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="prestige" value="rank-prestige-moreIsBetter" checked>Вуз должен занимать наиболее высокое место в рейтинге.</label>
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="prestige" value="rank-prestige-moreIsWorse">Мне кажется, в топовых вузах много мажоров. Не хочу туда.</label>
 					</div>
 				</div>
 
-				<div class="question-radio question-radio_hidden">
-					<p class="question-radio__questions-counter">Вопрос 2 из 3</p>
-					<p class="question-radio__question-text">Вы собираетесь сдавать профильную математику (неважно, с какой целью — для поступления или «на всякий случай»)?</p>
+				<div class="multi-step-form__question multi-step-form__question_hidden">
+					<p class="multi-step-form__questions-counter">Вопрос 2 из 20</p>
+					<p class="multi-step-form__question-text">Вы собираетесь сдавать профильную математику (неважно, с какой целью — для поступления или «на всякий случай»)?</p>
 
-					<div class="question-radio__variants">
-						<label class="question-radio__label-radio"><input type="radio" class="question-radio__input-radio" name="question-radio-2" value="pass-math" checked>Собираюсь.</label>
-						<label class="question-radio__label-radio"><input type="radio" class="question-radio__input-radio" name="question-radio-2" value="not-pass-math">Не собираюсь.</label>
+					<div class="multi-step-form__variants-radio">
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="partOfMath" value="rank-partOfMath-moreIsBetter" checked>Собираюсь.</label>
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="partOfMath" value="rank-partOfMath-moreIsWorse">Не собираюсь.</label>
 					</div>
 				</div>
 
-				<div class="question-radio question-radio_hidden">
-					<p class="question-radio__questions-counter">Вопрос 3 из 3</p>
-					<p class="question-radio__question-text">Хотите ли вы использовать баллы профильной математики для поступления?</p>
+				<div class="multi-step-form__question multi-step-form__question_hidden">
+					<p class="multi-step-form__questions-counter">Вопрос 3 из 20</p>
+					<p class="multi-step-form__question-text">Хотели бы вы получить двойной диплом бакалавра?</p>
 
-					<div class="question-radio__variants">
-						<label class="question-radio__label-radio"><input type="radio" class="question-radio__input-radio" name="question-radio-3" value="use-math" checked>Да, хочу. Планирую поступать туда, где требуется математика.</label>
-						<label class="question-radio__label-radio"><input type="radio" class="question-radio__input-radio" name="question-radio-3" value="not-use-math">Нет, не хочу. Планирую поступать на направление без математики.</label>
+					<div class="multi-step-form__variants-radio">
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="doubleDiploma" value="isHere-doubleDiploma-important" checked>Да, хочу поучаствовать в такой программе.</label>
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="doubleDiploma" value="isHere-doubleDiploma-notImportant">Меня это не интересует.</label>
+					</div>
+				</div>
+
+				<div class="multi-step-form__question multi-step-form__question_hidden">
+					<p class="multi-step-form__questions-counter">Вопрос 4 из 20</p>
+					<p class="multi-step-form__question-text">Важно ли для вас наличие военной кафедры в вузе?</p>
+
+					<div class="multi-step-form__variants-radio">
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="militaryDepartment" value="isHere-militaryDepartment-important" checked>Да, я считаю это важным.</label>
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="militaryDepartment" value="isHere-militaryDepartment-notImportant">Нет, меня не интересует военная кафедра.</label>
+					</div>
+				</div>
+
+				<div class="multi-step-form__question multi-step-form__question_hidden">
+					<p class="multi-step-form__questions-counter">Вопрос 5 из 20</p>
+					<p class="multi-step-form__question-text">Вас интересует научная деятельность?</p>
+
+					<div class="multi-step-form__variants-radio">
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="science" value="rank-science-moreIsBetter" checked>Да, планирую заниматься этим в университете.</label>
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="science" value="rank-science-moreIsWorse">Нет. Я надеюсь, что меня не будут заставлять писать статьи в университете.</label>
+					</div>
+				</div>
+
+				<div class="multi-step-form__question multi-step-form__question_hidden">
+					<p class="multi-step-form__questions-counter">Вопрос 6 из 20</p>
+					<p class="multi-step-form__question-text">Что предпочтете: жесткие условия обучения, которые здорово прокачают ваши навыки, или мягкие, но, возможно, с недостаточно качественной подготовкой?</p>
+
+					<div class="multi-step-form__variants-radio">
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="learningEnvironment" value="rank-learningEnvironment-moreIsBetter" checked>Пусть будет жестко, но максимально эффективно.</label>
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="learningEnvironment" value="rank-learningEnvironment-moreIsWorse">Я хочу более мягкие условия.</label>
+					</div>
+				</div>
+
+				<div class="multi-step-form__question multi-step-form__question_hidden">
+					<p class="multi-step-form__questions-counter">Вопрос 7 из 20</p>
+					<p class="multi-step-form__question-text">Зачастую студентов вузов, чьи дипломы высоко ценятся, охотнее берут на стажировки. Важно ли вам работать во время учебы?</p>
+
+					<div class="multi-step-form__variants-radio">
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="demandOfDiploma" value="rank-demandOfDiploma-moreIsBetter" checked>Да, собираюсь устраиваться на работу до окончания обучения.</label>
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="demandOfDiploma" value="rank-demandOfDiploma-moreIsWorse">Нет, не планирую работать, пока не выпущусь из университета.</label>
+					</div>
+				</div>
+
+				<div class="multi-step-form__question multi-step-form__question_hidden">
+					<p class="multi-step-form__questions-counter">Вопрос 8 из 20</p>
+					<p class="multi-step-form__question-text">Если бы вам пришлось поступать в университет на платной основе, вы бы выбрали более дорогой или дешевый?</p>
+
+					<div class="multi-step-form__variants-radio">
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="averageCost" value="rank-averageCost-moreIsBetter" checked>Дорогой. Я готов много заплатить за качественное обучение.</label>
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="averageCost" value="rank-averageCost-moreIsWorse">Дешевый. У меня нет желания/возможности много платить за университет.</label>
+					</div>
+				</div>
+
+				<div class="multi-step-form__question multi-step-form__question_hidden">
+					<p class="multi-step-form__questions-counter">Вопрос 9 из 20</p>
+					<p class="multi-step-form__question-text">Какие результаты ЕГЭ вы ожидаете?</p>
+
+					<div class="multi-step-form__variants-radio">
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="averageScore" value="rank-averageScore-moreIsBetter" checked>Высокие.</label>
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="averageScore" value="rank-averageScore-moreIsWorse">Невысокие.</label>
+					</div>
+				</div>
+
+				<div class="multi-step-form__question multi-step-form__question_hidden">
+					<p class="multi-step-form__questions-counter">Вопрос 10 из 20</p>
+					<p class="multi-step-form__question-text">Какой вуз для вас привлекательнее: современный или старинный?</p>
+
+					<div class="multi-step-form__variants-radio">
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="novelty" value="rank-novelty-moreIsBetter" checked>Современный.</label>
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="novelty" value="rank-novelty-moreIsWorse">Старинный.</label>
+					</div>
+				</div>
+
+				<div class="multi-step-form__question multi-step-form__question_hidden">
+					<p class="multi-step-form__questions-counter">Вопрос 11 из 20</p>
+					<p class="multi-step-form__question-text">Хотите учиться в вузе, о котором много говорят в интернете? Или же вас отталкивают "попсовые" университеты?</p>
+
+					<div class="multi-step-form__variants-radio">
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="popularity" value="rank-popularity-moreIsBetter" checked>Популярный вуз - это круто.</label>
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="popularity" value="rank-popularity-moreIsWorse">Мне любопытно узнать изнутри вузы, о которых мало говорят.</label>
+					</div>
+				</div>
+
+				<div class="multi-step-form__question multi-step-form__question_hidden">
+					<p class="multi-step-form__questions-counter">Вопрос 12 из 20</p>
+					<p class="multi-step-form__question-text">Интересуют ли вас образовательные курсы от Mail.ru Group?</p>
+
+					<div class="multi-step-form__variants-radio">
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="collaborationWithMail" value="isHere-collaborationWithMail-important" checked>Да, было бы здорово иметь шансы туда поступить.</label>
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="collaborationWithMail" value="isHere-collaborationWithMail-notImportant">Нет, учиться там не планирую.</label>
+					</div>
+				</div>
+
+				<div class="multi-step-form__question multi-step-form__question_hidden">
+					<p class="multi-step-form__questions-counter">Вопрос 13 из 20</p>
+					<p class="multi-step-form__question-text">Должен ли вуз иметь конкретную направленность? Или вас устраивает общий профиль?</p>
+
+					<div class="multi-step-form__variants-radio">
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="subject" value="subject-common" checked>Общий профиль.</label>
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="subject" value="subject-naturalSciences">Естественно-научный вуз.</label>
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="subject" value="subject-technicalSciences">Технический вуз.</label>
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="subject" value="subject-humanities">Гуманитарный вуз.</label>
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="subject" value="subject-finance">Финансовый вуз.</label>
+					</div>
+				</div>
+
+				<div class="multi-step-form__question multi-step-form__question_hidden">
+					<p class="multi-step-form__questions-counter">Вопрос 14 из 20</p>
+					<p class="multi-step-form__question-text">Сдавали ли вы ГТО? Если да, отличные ли у вас результаты?</p>
+
+					<div class="multi-step-form__variants-radio">
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="gtoConsidering" value="isHere-gtoConsidering-important" checked>Сдавал(-а), результаты отличные.</label>
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="gtoConsidering" value="isHere-gtoConsidering-notImportant">Не сдавал(-а)/результаты не очень.</label>
+					</div>
+				</div>
+
+				<div class="multi-step-form__question multi-step-form__question_hidden">
+					<p class="multi-step-form__questions-counter">Вопрос 15 из 20</p>
+					<p class="multi-step-form__question-text">Есть ли у вас шанс получить золотую медаль?</p>
+
+					<div class="multi-step-form__variants-radio">
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="medalConsidering" value="isHere-medalConsidering-important" checked>Да, я иду на золотую медаль.</label>
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="medalConsidering" value="isHere-medalConsidering-notImportant">Нет, вероятность нулевая.</label>
+					</div>
+				</div>
+
+				<div class="multi-step-form__question multi-step-form__question_hidden">
+					<p class="multi-step-form__questions-counter">Вопрос 16 из 20</p>
+					<p class="multi-step-form__question-text">Богатое ли у вас портфолио?</p>
+
+					<div class="multi-step-form__variants-radio">
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="portfolioConsidering" value="isHere-portfolioConsidering-important" checked>Да, у меня много достижений, которые я могу подтвердить документально.</label>
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="portfolioConsidering" value="isHere-portfolioConsidering-notImportant">Нет, мне особо нечего показать.</label>
+					</div>
+				</div>
+
+				<div class="multi-step-form__question multi-step-form__question_hidden">
+					<p class="multi-step-form__questions-counter">Вопрос 17 из 20</p>
+					<p class="multi-step-form__question-text">Считаете ли вы, что ваше сочинение заслуживает дополнительных баллов при поступлении?</p>
+
+					<div class="multi-step-form__variants-radio">
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="essayConsidering" value="isHere-essayConsidering-important" checked>Да, на мой взгляд, оно интересное.</label>
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="essayConsidering" value="isHere-essayConsidering-notImportant">Нет, мне оно не нравится.</label>
+					</div>
+				</div>
+
+				<div class="multi-step-form__question multi-step-form__question_hidden">
+					<p class="multi-step-form__questions-counter">Вопрос 18 из 20</p>
+					<p class="multi-step-form__question-text">Есть ли у вас красный диплом об окончании колледжа?</p>
+
+					<div class="multi-step-form__variants-radio">
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="collegeConsidering" value="isHere-collegeConsidering-important" checked>Да, я с отличием окончил(-а) колледж по специальности, на которую планирую поступать в вуз.</label>
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="collegeConsidering" value="isHere-collegeConsidering-notImportant">Нет, я не учился(-ась)/не получил(-а) красный диплом.</label>
+					</div>
+				</div>
+
+				<div class="multi-step-form__question multi-step-form__question_hidden">
+					<p class="multi-step-form__questions-counter">Вопрос 19 из 20</p>
+					<p class="multi-step-form__question-text">Участвовали ли вы в волонтерской деятельности?</p>
+
+					<div class="multi-step-form__variants-radio">
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="volunteeringConsidering" value="isHere-volunteeringConsidering-important" checked>Да.</label>
+						<label class="multi-step-form__label-radio"><input type="radio" class="multi-step-form__input-radio" name="volunteeringConsidering" value="isHere-volunteeringConsidering-notImportant">Нет.</label>
+					</div>
+				</div>
+
+				<div class="multi-step-form__question multi-step-form__question_hidden">
+					<p class="multi-step-form__questions-counter">Вопрос 20 из 20</p>
+					<p class="multi-step-form__question-text">ЕГЭ по каким предметам вы планируете сдавать (русский язык не учитывается)? (В настоящий момент этот вопрос не влияет на результат)</p>
+
+					<div class="multi-step-form__variants-checkbox">
+						<label class="multi-step-form__label-checkbox"><input type="checkbox" class="multi-step-form__input-checkbox" name="exams" value="math">Математика</label>
+						<label class="multi-step-form__label-checkbox"><input type="checkbox" class="multi-step-form__input-checkbox" name="exams" value="physics">Физика</label>
+						<label class="multi-step-form__label-checkbox"><input type="checkbox" class="multi-step-form__input-checkbox" name="exams" value="informatics">Информатика</label>
+						<label class="multi-step-form__label-checkbox"><input type="checkbox" class="multi-step-form__input-checkbox" name="exams" value="biology">Биология</label>
+						<label class="multi-step-form__label-checkbox"><input type="checkbox" class="multi-step-form__input-checkbox" name="exams" value="chemistry">Химия</label>
+						<label class="multi-step-form__label-checkbox"><input type="checkbox" class="multi-step-form__input-checkbox" name="exams" value="geography">География</label>
+						<label class="multi-step-form__label-checkbox"><input type="checkbox" class="multi-step-form__input-checkbox" name="exams" value="literature">Литература</label>
+						<label class="multi-step-form__label-checkbox"><input type="checkbox" class="multi-step-form__input-checkbox" name="exams" value="social">Обществознание</label>
+						<label class="multi-step-form__label-checkbox"><input type="checkbox" class="multi-step-form__input-checkbox" name="exams" value="history">История</label>
+						<label class="multi-step-form__label-checkbox"><input type="checkbox" class="multi-step-form__input-checkbox" name="exams" value="language">Иностранный язык</label>
 					</div>
 				</div>
 			</div>
 
 			<div class="multi-step-form__buttons">
-				<button type="button" class="button multi-step-form__button multi-step-form__button_type_prev button_hidden" onclick="prevQuestion()">Предыдущий вопрос</button>
 				<button type="button" class="button multi-step-form__button multi-step-form__button_type_next" onclick="nextQuestion()">Следующий вопрос</button>
-				<button type="button" class="button multi-step-form__button multi-step-form__button_type_submit button_hidden" onclick="processAnswers()">Отправить</button>
+				<button type="button" class="button multi-step-form__button multi-step-form__button_type_submit button_hidden" onclick="processCurrentQuestion()">Закончить тест</button>
 			</div>
 
-			<ul class="multi-step-form__result">
-			</ul>
+			<div class="multi-step-form__current-results">
+				<p class="multi-step-form__notification">Текущий список вузов в порядке предпочтительности:</p>
+				<p class="multi-step-form__string-with-objects">Список появится, как только вы ответите на первый вопрос.</p>
+			</div>
+
+			<div class="multi-step-form__result multi-step-form__result_hidden">
+				<div class="result-1-place">
+					<p class="annotation-to-results result-1-place__annotation">Наиболее подходящий для вас вуз: </p>
+					<p class="result-object result-1-place__object"></p>
+				</div>
+				<div class="result-2-place">
+					<p class="annotation-to-results result-2-place__annotation">Второе место: </p>
+					<p class="result-object result-2-place__object"></p>
+				</div>
+				<div class="result-3-place">
+					<p class="annotation-to-results result-3-place__annotation">Третье место: </p>
+					<p class="result-object result-3-place__object"></p>
+				</div>
+				<div class="result-others">
+					<p class="annotation-to-results result-others__annotation">Остальные (в порядке предпочтительности): </p>
+					<p class="result-object result-others__object"></p>
+				</div>
+			</div>
 		</div>
 	</section>
 </body>
