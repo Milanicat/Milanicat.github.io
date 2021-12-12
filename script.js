@@ -30,6 +30,21 @@ let universities = {
 		},
 		//The sciences that prevail at the university
 		subject: "common",
+		exams: [ ["math", "physics"], 
+					["math", "physics", "informatics"],
+					["math", "biology", "chemistry"],
+					["math", "physics", "chemistry"],
+					["math", "geography"],
+					["social", "history"],
+					["history", "language"],
+					["history", "literature"],
+					["literature", "language"],
+					["math", "language"],
+					["math", "informatics"],
+					["math", "social"],
+					["math", "biology"],
+					["social", "language"],
+					["social", "literature"] ],
 	},
 	"МФТИ": {
 		points: 0,
@@ -56,6 +71,10 @@ let universities = {
 			volunteeringConsidering: false,
 		},
 		subject: "technicalSciences",
+		exams: [ ["math", "physics"],
+					["math", "informatics"],
+					["math", "chemistry"],
+					["math", "biology"] ],
 	},
 	"МИФИ": {
 		points: 0,
@@ -82,6 +101,13 @@ let universities = {
 			volunteeringConsidering: false,
 		},
 		subject: "technicalSciences",
+		exams: [ ["math", "physics"],
+					["math", "informatics"],
+					["math", "chemistry"],
+					["math", "biology"],
+					["math", "social"],
+					["biology", "chemistry"],
+					["history", "language"] ],
 	},
 	"ВШЭ": {
 		points: 0,
@@ -108,6 +134,22 @@ let universities = {
 			volunteeringConsidering: false,
 		},
 		subject: "common",
+		exams: [ ["math", "physics"],
+					["math", "informatics"],
+					["math", "chemistry"],
+					["math", "biology"],
+					["math", "social"],
+					["math", "social", "language"],
+					["biology", "chemistry"],
+					["history", "language"],
+					["math", "language"],
+					["history", "social"],
+					["literature", "language"],
+					["literature"],
+					["literature", "language"],
+					["social", "language"],
+					["math", "geography"],
+					["physics", "chemistry"] ],
 	},
 	"МГИМО": {
 		points: 0,
@@ -134,6 +176,11 @@ let universities = {
 			volunteeringConsidering: false,
 		},
 		subject: "humanities",
+		exams: [ ["history", "language"],
+					["social", "language"],
+					["math", "language"],
+					["geography", "language"],
+					["literature", "language"] ],
 	},
 	"МГТУ им. Н.Э. Баумана": {
 		points: 0,
@@ -160,6 +207,15 @@ let universities = {
 			volunteeringConsidering: true,
 		},
 		subject: "technicalSciences",
+		exams: [ ["math", "physics"],
+					["math", "informatics"],
+					["math", "social"],
+					["social"],
+					["history"],
+					["social", "history"],
+					["social", "language"],
+					["informatics", "language"],
+					["math", "language"] ],
 	},
 	"РАНХиГС": {
 		points: 0,
@@ -186,6 +242,27 @@ let universities = {
 			volunteeringConsidering: false,
 		},
 		subject: "finance",
+		exams: [ ["math", "physics"],
+					["math", "informatics"],
+					["math", "language"],
+					["math", "biology"],
+					["biology", "language"],
+					["biology", "social"],
+					["math", "social"],
+					["math", "geography"],
+					["math", "history"],
+					["math", "social", "language"],
+					["social", "geography"],
+					["social", "history"],
+					["social", "language"],
+					["history", "geography"],
+					["language", "history"],
+					["social"],
+					["literature", "history"],
+					["literature"],
+					["social", "informatics"],
+					["language"],
+					["history"], ],
 	},
 	"Финансовый университет": {
 		points: 0,
@@ -212,6 +289,16 @@ let universities = {
 			volunteeringConsidering: false,
 		},
 		subject: "finance",
+		exams: [ ["math", "physics"],
+					["math", "informatics"],
+					["math", "language"],
+					["math", "social"],
+					["math", "history"],
+					["social", "informatics"],
+					["social", "history"],
+					["social", "language"],
+					["history", "language"],
+					["social", "biology"] ]
 	},
 	"РЭУ им. Г.В. Плеханова": {
 		points: 0,
@@ -238,6 +325,15 @@ let universities = {
 			volunteeringConsidering: true,
 		},
 		subject: "finance",
+		exams: [ ["math", "chemistry"],
+					["math", "informatics"],
+					["math", "biology"],
+					["math", "social"],
+					["math", "social", "language"],
+					["social", "language"],
+					["social", "history"],
+					["literature"],
+					["math", "physics"] ]
 	},
 	"МИСиС": {
 		points: 0,
@@ -264,6 +360,13 @@ let universities = {
 			volunteeringConsidering: true,
 		},
 		subject: "technicalSciences",
+		exams: [ ["math", "chemistry"],
+					["math", "physics"],
+					["math", "informatics"],
+					["math", "social"],
+					["math", "language"],
+					["social", "language"],
+					["language", "history"] ]
 	},
 	"РГУНиГ им. И.М. Губкина": {
 		points: 0,
@@ -290,6 +393,15 @@ let universities = {
 			volunteeringConsidering: false,
 		},
 		subject: "technicalSciences",
+		exams: [ ["math", "chemistry"],
+					["math", "physics"],
+					["math", "informatics"],
+					["math", "social"],
+					["math", "language"],
+					["math", "geography"],
+					["social", "history"],
+					["social", "informatics"],
+					["language", "social"] ]
 	},
 	"МЭИ": {
 		points: 0,
@@ -316,6 +428,17 @@ let universities = {
 			volunteeringConsidering: true,
 		},
 		subject: "technicalSciences",
+		exams: [ ["math", "chemistry"],
+					["math", "physics"],
+					["math", "informatics"],
+					["math", "social"],
+					["social", "history"],
+					["social", "informatics"],
+					["social", "language"],
+					["literature"],
+					["informatics", "language"],
+					["literature", "language"],
+					["history", "language"] ]
 	},
 	"ПМГМУ им. И.М. Сеченова": {
 		points: 0,
@@ -342,6 +465,12 @@ let universities = {
 			volunteeringConsidering: false,
 		},
 		subject: "naturalSciences",
+		exams: [ ["math", "biology"],
+					["biology", "chemistry"],
+					["math", "social"],
+					["social", "history"],
+					["math", "physics"],
+					["math", "language"] ]
 	},
 	"РУДН": {
 		points: 0,
@@ -368,6 +497,41 @@ let universities = {
 			volunteeringConsidering: true,
 		},
 		subject: "common",
+		exams: [ ["math", "biology"],
+					["physics", "biology"],
+					["biology", "chemistry"],
+					["informatics", "biology"],
+					["geography", "biology"],
+					["language", "biology"],
+					["math", "social"],
+					["math", "informatics"],
+					["math", "geography"],
+					["math", "history"],
+					["math", "language"],
+					["math", "physics"],
+					["math", "chemistry"],
+					["social", "informatics"],
+					["social", "history"],
+					["social", "language"],
+					["social", "geography"],
+					["math"],
+					["literature"],
+					["history", "geography"],
+					["language", "history"],
+					["history", "literature"],
+					["physics", "chemistry"],
+					["chemistry", "language"],
+					["informatics", "language"],
+					["literature", "language"],
+					["social", "biology"],
+					["history", "biology"],
+					["social", "literature"],
+					["physics", "informatics"],
+					["physics", "language"],
+					["informatics", "chemistry"],
+					["chemistry", "geography"],
+					["informatics", "geography"],
+					["geography", "language"], ]
 	},
 	"РНИМУ им. Н.И. Пирогова": {
 		points: 0,
@@ -394,6 +558,10 @@ let universities = {
 			volunteeringConsidering: false,
 		},
 		subject: "naturalSciences",
+		exams: [ ["math", "biology"],
+					["biology", "chemistry"],
+					["social", "history"],
+					["math", "physics"] ]
 	},
 	"МГЛУ": {
 		points: 0,
@@ -420,6 +588,12 @@ let universities = {
 			volunteeringConsidering: true,
 		},
 		subject: "humanities",
+		exams: [ ["math", "language"],
+					["history", "language"],
+					["literature", "language"],
+					["math", "social", "language"],
+					["social", "language"],
+					["biology", "language"] ]
 	},
 	"ВАВТ": {
 		points: 0,
@@ -446,6 +620,8 @@ let universities = {
 			volunteeringConsidering: true,
 		},
 		subject: "finance",
+		exams: [ ["math", "language"],
+					["social", "language"] ]
 	},
 	"МАИ": {
 		points: 0,
@@ -472,6 +648,12 @@ let universities = {
 			volunteeringConsidering: true,
 		},
 		subject: "technicalSciences",
+		exams: [ ["math", "physics"],
+					["math", "informatics"],
+					["math", "geography"],
+					["math", "social"],
+					["social", "language"],
+					["history", "language"] ]
 	},
 	"МГЮА": {
 		points: 0,
@@ -498,6 +680,8 @@ let universities = {
 			volunteeringConsidering: true,
 		},
 		subject: "humanities",
+		exams: [ ["social", "language"],
+					["social", "history"] ]
 	},
 	"МГМСУ им. А.И. Евдокимова": {
 		points: 0,
@@ -524,6 +708,10 @@ let universities = {
 			volunteeringConsidering: false,
 		},
 		subject: "naturalSciences",
+		exams: [ ["biology", "chemistry"],
+					["math", "biology"],
+					["social", "history"],
+					["math", "social"] ]
 	},
 }
 
@@ -550,13 +738,25 @@ function processCurrentQuestion() {
 										.getElementsByClassName("multi-step-form__question")[currentQuestion]
 										.querySelectorAll("*");
 
+	let arrayOfCheckboxAnswers = [];
+
 	for (let i = 0; i < descendantsOfQuestion.length; i++) {
 		//Find all variants of answers in this question
-		if (descendantsOfQuestion[i].className.includes("input")) {
+		if (descendantsOfQuestion[i].className.includes("input-radio")) {
 			if (descendantsOfQuestion[i].checked) {
 				givePointsToUniversities(descendantsOfQuestion[i].value);
+				break;
 			}
 		}
+		else if (descendantsOfQuestion[i].className.includes("input-checkbox")) {
+			if (descendantsOfQuestion[i].checked) {
+				arrayOfCheckboxAnswers.push(descendantsOfQuestion[i].value);
+			}
+		}
+	}
+
+	if (arrayOfCheckboxAnswers.length != 0) {
+		givePointsToUniversities(arrayOfCheckboxAnswers);
 	}
 
 	//If this is the last question
@@ -569,39 +769,62 @@ function processCurrentQuestion() {
 }
 
 function givePointsToUniversities(answer) {
-	let pointsForUniversity;
+	let pointsForUniversity = 0;
 
-	let parsedAnswer = answer.split("-");
-
-	if (parsedAnswer[0] == "rank") {
-		if (parsedAnswer[2] == "moreIsBetter") {
-			for (let university in universities) {
-				pointsForUniversity = 1 / universities[university]["rank"][parsedAnswer[1]];
-
-				universities[university]["points"] += pointsForUniversity;
-			}
+	//Processing the checkbox answers. Assumption: only exams are processed this way, no other data is received
+	if (Array.isArray(answer))  {
+		if (answer.length == 0) {
+			return;
 		}
-		else if (parsedAnswer[2] == "moreIsWorse") {
+		else {
 			for (let university in universities) {
-				pointsForUniversity = universities[university]["rank"][parsedAnswer[1]] / Object.keys(universities).length;
+				for (let i = 0; i < universities[university]["exams"].length; i++) {
+					//If the current combination of exams is fully included in the user's combination of exams, the university receives 1.5 points
+					if (universities[university]["exams"][i].every(elem => answer.includes(elem))) {
+						pointsForUniversity += 1.5;
+					}
+				}
 
 				universities[university]["points"] += pointsForUniversity;
+
+				pointsForUniversity = 0;
 			}
 		}
 	}
-	else if (parsedAnswer[0] === "isHere") {
-		if (parsedAnswer[2] === "important") {
-			for (let university in universities) {
-				if (universities[university]["isHere"][parsedAnswer[1]] == true) {
-					universities[university]["points"] += 1;
+	//Processing the radio answers
+	else {
+		let parsedAnswer = answer.split("-");
+
+		if (parsedAnswer[0] == "rank") {
+			if (parsedAnswer[2] == "moreIsBetter") {
+				for (let university in universities) {
+					pointsForUniversity = 1 / universities[university]["rank"][parsedAnswer[1]];
+
+					universities[university]["points"] += pointsForUniversity;
+				}
+			}
+			else if (parsedAnswer[2] == "moreIsWorse") {
+				for (let university in universities) {
+					pointsForUniversity = universities[university]["rank"][parsedAnswer[1]] / Object.keys(universities).length;
+
+					universities[university]["points"] += pointsForUniversity;
 				}
 			}
 		}
-	}
-	else if (parsedAnswer[0] === "subject") {
-		for (let university in universities) {
-			if (universities[university]["subject"] == parsedAnswer[1]) {
-				universities[university]["points"] += 2;
+		else if (parsedAnswer[0] == "isHere") {
+			if (parsedAnswer[2] == "important") {
+				for (let university in universities) {
+					if (universities[university]["isHere"][parsedAnswer[1]] == true) {
+						universities[university]["points"] += 1;
+					}
+				}
+			}
+		}
+		else if (parsedAnswer[0] == "subject") {
+			for (let university in universities) {
+				if (universities[university]["subject"] == parsedAnswer[1]) {
+					universities[university]["points"] += 2;
+				}
 			}
 		}
 	}

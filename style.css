@@ -189,6 +189,10 @@ body {
 	font-size: 3.3vmin;
 }
 
+.annotation-to-results {
+	font-size: 2.5vmin;
+}
+
 .multi-step-form__result_hidden {
 	display: none;
 }
